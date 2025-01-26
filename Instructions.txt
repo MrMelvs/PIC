@@ -1,0 +1,12 @@
+Code is within calendar_service.py
+Docker file is found under "Dockerfile"
+Requirements file has also already been created under "requirements.txt"
+
+Running the following command should build and run the application for you
+
+"docker compose up --build"
+
+Sending curl commands to  the endpoint will allow you to test the application:
+
+e.g:
+curl -X POST -H "Content-Type: application/json" -d '{"description": "Meeting with Melvin", "time": "2024-07-05T11:00:00"}' http://localhost:5000/events
